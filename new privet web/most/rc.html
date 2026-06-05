@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>residence certificate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>Tunisia the Ministry of the Interior </li>
+            <div id="h"><a href="#"><li id="l1">contact</li></a>
+            <a href="#" id="l2"><li>help</li></a></div>
+        </ol>
+    </nav>
+    <section id="rcsection">
+        <h1 id="rch1">this page is dedicated for residence who lives in Tunisia in this page you can do so much thing</h1>
+        <h2 id="rch2">tell us more about yourself</h2>
+        <select id="rs1">
+            //TODO will and want
+            <option id="want">I want to be a residence</option>
+            <option>I am already a resident</option>
+        </select>
+    <aside id="rcaside">
+        <iframe id="frame" src="want.html" name="want" frameborder="0"></iframe>
+    </aside>
+        
+    </section>
+    <script>
+        (function(){
+            const select = document.getElementById('rs1');
+            const frame = document.getElementById('frame');
+            function updateFrame(){
+                const idx = select.selectedIndex;
+                if(idx==0){
+                    frame.src="want.html";
+                }
+                else{
+                    frame.src="citizen.html";
+                };
+            }
+            updateFrame();
+            select.addEventListener('change', updateFrame);
+        })();
+    </script>
+</body>
+</html>

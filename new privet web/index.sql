@@ -1,0 +1,18 @@
+CREATE DATABASE infos;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    national_id VARCHAR(8) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+SELECT * FROM users;
+ORDER BY id;
+
+CREATE TABLE profiles (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    user_id INT NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);

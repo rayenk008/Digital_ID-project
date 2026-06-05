@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="home.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>acceuil</title>
+</head>
+<body>
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    header("Location: log in menu.html");
+    exit();
+}
+?>
+    <nav>
+        <ol>
+            <li>Tunisia the Ministry of the Interior </li>
+            <div id="h"><a href="#"><li id="l1">contact</li></a>
+            <a href="#" id="l2"><li>help</li></a></div>
+        </ol>
+    </nav>
+    <section id="acc">
+        <h1 id="welc">welcome </h1>
+        <fieldset>
+            <legend>most selected</legend>
+            <a href="most/bc.html">
+                <div id="b_c">
+                <h2>I need a birth certification</h2>
+                <p>you can tap here for birth certification you can print it</p>
+            </div>
+            </a>
+            <a href="most/sv.html">
+                <div id="s_v">
+                <h2>signature verification</h2>
+                <p>A signed attestation is a statement confirming that a specific person has genuinely signed a document and agrees with its contents. It’s used in official contexts (like municipal services) to verify identity and prove the signature is real.</p>
+            </div>
+            </a>
+            <a href="most/ctc.html">
+                <div id="c_c">
+                <h2>Certified true copy</h2>
+                <p>certified true copy of an original document—verified to match the original exactly (text, signatures, stamps, etc.). It’s used when a copy must be accepted in place of the original</p>
+            </div>
+            </a>
+            <a href="most/rc.html">
+                <div id="r_c">
+                <h2>Residence certificate</h2>
+                <p> a document proving that you are living in Tunisia</p>
+            </div>
+            </a>
+            <a href="report.html">
+                <div>
+                    <h2>I would like to report something </h2>
+                    <p>here you have the ability to declare something wrong with the street or having problem with some machines in the country</p>
+                </div>
+            </a>
+            
+        </fieldset>
+        <fieldset id="oth">
+            <a href="administration/pd.html" id="po">
+                <h4 style="text-align: center;">police Department</h4>
+                <p>you can claim a date to get your ID and your passport also some related things to police department</p>
+            </a>
+            <a href="administration/tr.html" id="tre">
+                <h4 style="text-align: center;">Treasury</h4>
+                <p>The treasury (cashier) office
+                handles official payments 
+                (fees, taxes, fines), 
+                issues formal receipts, manages incoming funds, and records all financial transactions for the department.</p>
+            </a>
+            <a id="cnss" href="administration/CNSS.html">
+                <h4 style="text-align: center;">CNSS</h4>
+                <p>It manages social insurance programs like:<br>
+                Retirement pensions
+                Family allowances
+                Work accident coverage
+                Health insurance contributions for employees and employers</p>
+            </a>
+            <a id="cnrps" href="administration/CNRPS.html">
+                <h4 style="text-align: center;">CNRPS</h4>
+                <p>CNRPS is Tunisia’s National Pension and Social Welfare Fund.
+                It manages retirement pensions and social protection benefits for public-sector employees, including retirement, disability, and survivors’ benefits.</p>
+            </a>
+        </fieldset>
+    </section>
+    <footer>
+        <div>
+            <h1>FAQ</h1>
+            <details><summary>how can I renew my passport?</summary>
+                you can add your passport from the police Department section</details>
+            <hr><details><summary>how can I renew my visa?</summary>
+                Visa renewal extends your current visa before it expires. Prepare your passport, current visa, proof of residence, and required documents, then submit them online <a href="#">here</a> or at the immigration office. Renewing on time avoids fines or gaps in legal status.
+            </details>
+            <hr>
+            <details>
+                you can pay taxes in the treasury section or click <a href="tr.html">here</a>
+                <summary>where to pay taxes?</summary>
+            </details>
+        </div>
+        <p>2026 Tunisia Ministry of the Interior. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

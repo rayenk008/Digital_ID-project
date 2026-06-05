@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic ID - Ministry of Interior Tunisia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ol>
+            <li>Tunisia the Ministry of the Interior </li>
+            <div id="h"><a href="#"><li id="l1">contact</li></a>
+            <a href="#" id="l2"><li>help</li></a></div>
+        </ol>
+    </nav>
+    <main>
+        <form id="loginForm" class="login-form" action="login.php" method="post" onsubmit="return error()">
+            <div class="form-group">
+                <label for="idNumber" class="form-label">National ID Number</label>
+                <div class="input-wrapper">
+                    <input type="number" id="idnumber" name="idnumber" class="form-input"  placeholder="00000000" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password</label>
+                <div class="input-wrapper">
+                    <input type="password" id="password" name="password" class="form-input" minlength="8" maxlength="8" placeholder="••••••••" required >
+                </div>
+                <button type="button" class="toggle-password" id="show"onclick="togglePassword()">Show</button>
+            </div>
+            <div class="form-group checkbox">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe" class="checkbox-label">Remember me</label>
+            </div>
+            <div id="btn">
+                <button type="submit" class="btn1">Sign In</button>
+                <button type="reset" class="btn1">Clear</button>
+            </div>
+            <div class="links-section">
+                <a href="register.html" class="link">Don't have an account? Register here</a>
+                <a href="#" class="link">Forgot your password?</a>
+            </div>
+    </main>
+
+    <footer class="footer">
+        <p>2026 Tunisia Ministry of the Interior. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>

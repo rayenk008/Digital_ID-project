@@ -1,0 +1,197 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Cabin", sans-serif;
+    color: black;
+    text-decoration: none;
+}
+:root {
+  --bg: beige;
+  --nav: darkkhaki;
+  --text: black;
+}
+/*nav*/
+body{
+  background-color: var(--bg);
+}
+nav,li{
+  list-style: none;
+  display: inline-block;
+  color: white;
+  font-size: larger;
+  transition-property:all ;
+  transition-duration: 2s;
+}
+nav{
+  position: sticky;
+  width: 100%;
+  height: 5%;
+  background-color: darkkhaki;
+}
+li{
+  position: relative;
+  margin-left: 20px;
+}
+#h{
+  display: inline;
+  position: absolute;
+  left: 80%;
+  display: flex;
+  top: 0px;
+  right: 20px;
+  justify-content: end;
+  gap: 20px;
+}
+li::before{
+  content :"";
+  position :absolute;
+  bottom :0;
+  left :0;
+  width :0px;
+  height :10%;
+  background :white;
+  transition-duration:0.3s;
+  transition-property:all;}
+li:hover::before{
+  cursor: pointer;
+  width: 100%;
+  background: linear-gradient(to right, darkkhaki, white);
+  border: none;
+}
+.btn1::before{
+  content :"";
+  position :absolute;
+  bottom :0;
+  left :0;
+  width :0px;
+  height :10%;
+  transition-duration:0.3s;
+  transition-property:all;}
+.btn1:hover::before{
+  cursor: pointer;
+  width: 100%;
+  background: linear-gradient(to right, darkkhaki, white);
+}
+/*nav end*/
+main{
+  position: relative;
+  top: 5%;
+  height: 90vh;
+  width: 100vw;
+  background-color: beige;
+}
+.links-section .link{
+  font-style: italic;
+  color: black;
+  text-decoration:none ;
+}
+form{
+  border-radius: 20px 50px;
+  width: 60%;
+  height: auto ;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border: 2px double rgb(224, 218, 123);
+}
+.form-group{
+  display: flex;
+}
+label{
+  width: 50%;
+}
+#btn{
+  text-align: center;
+}
+#btn .btn1{
+  display: inline-block;
+  width: 100px;
+  position: relative;
+  border: none;
+  border-bottom: 1px inset black;
+}
+#password,#idnumber{
+  border: none;
+  border-bottom: 1px solid black;
+  display: inline-block;
+}
+#password:focus,#idnumber:focus{
+  background-color: darkkhaki;
+  outline-style: none;
+}
+h4{
+  display: inline-block;
+  margin: 4px;
+}
+.aa{
+  color: black;
+  text-decoration: none;
+  border: 2px solid darkkhaki;
+  padding: 2px;
+}
+.aa:hover{
+  color: black;
+  text-decoration: none;
+  border: 2px solid darkkhaki;
+  padding: 2px;
+}
+/*acceuil.html code*/
+#acc{
+  margin:0 5px;
+}
+#welc{
+  transition-duration: 2s ;
+  transition-property: all;
+  margin: 0 10px;
+}
+#welc:hover{
+  transform: translate(10px);
+  cursor: default;
+}
+fieldset{
+  width: 97vw;
+  border-radius: 15px;
+  border: 2px solid var(--nav);
+  padding: 5px;
+  margin: 0px 0px 10px 0px;
+}
+fieldset:hover{
+  transition-duration: 1s;
+  border: 2px outset var(--nav);
+  box-shadow: 3px 3px 4px goldenrod;
+}
+legend{
+  color:var(--nav);
+  font-weight: bold;
+  font-style: italic;
+}
+#oth{
+  display: flex;
+  gap: 17px;
+}
+#po,#tre,#cnss,#cnrps{
+  border: 2px solid var(--nav);
+  border-radius: 10px;
+  text-align: center;
+}
+#po:hover,#tre:hover,#cnss:hover,#cnrps:hover{ 
+  border: 2px outset var(--nav);
+  cursor: pointer;
+}
+fieldset div:hover{ 
+  box-shadow: 3px 6px 100px var(--nav);
+  border: 2px solid var(--nav);
+  border-radius: 10px;
+  cursor: pointer;
+}
+footer div h1{
+  color:var(--nav);
+  margin-left:15px;
+}
+footer div details {
+  margin-left:15px;
+}
+footer p{
+  margin-left:15px;
+}

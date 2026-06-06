@@ -12,5 +12,4 @@ this project is under development
   <li>Reduces bribery</li>
   <li>and surely more civilized and futuristic </li>
 </ol>
-<p>I paid so much time to accomplish this project and make it ready</p>
-<footer style="background-color:'red'">bye</footer>
+<h3>for contact please contact me on E-mail thank you ^_^</h3>
